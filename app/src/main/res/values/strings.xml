@@ -4,9 +4,13 @@
     <string name="content_about">
         PT Telkom Indonesia (Persero) Tbk (Telkom) adalah Badan Usaha Milik Negara (BUMN)
         yang bergerak di bidang jasa layanan teknologi informasi dan komunikasi (TIK) dan jaringan telekomunikasi di Indonesia.
-        Kegiatan usaha TelkomGroup bertumbuh dan berubah seiring dengan perkembangan teknologi, informasi dan digitalisasi,
+        \nKegiatan usaha TelkomGroup bertumbuh dan berubah seiring dengan perkembangan teknologi, informasi dan digitalisasi,
         namun masih dalam koridor industri telekomunikasi dan informasi.
         Hal ini terlihat dari lini bisnis yang terus berkembang melengkapi legacy yang sudah ada sebelumnya.</string>
+    <string name="digital_business_domain">3 Digital Business Domain:</string>
+    <string name="content_digital_business_domain1"><b>Digital Connectivity:</b> Fiber to the x (FTTx), 5G, Software Defined Networking (SDN)/ Network Function Virtualization (NFV)/ Satellite</string>
+    <string name="content_digital_business_domain2"><b>Digital Platform:</b> Data Center, Cloud, Internet of Things (IoT), Big Data/ Artificial Intelligence (AI), Cybersecurity</string>
+    <string name="content_digital_business_domain3"><b>Digital Services:</b> Enterprise, Consumer</string>
     <string name="purpose">Purpose</string>
     <string name="content_purpose">
         Mewujudkan bangsa yang lebih sejahtera dan berdaya saing
