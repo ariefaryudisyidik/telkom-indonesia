@@ -53,17 +53,15 @@
                         android:layout_height="wrap_content"
                         android:padding="7dp"
                         android:text="@string/about"
-                        android:textSize="17sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="37dp"
+                        android:layout_marginTop="25dp"
                         android:padding="7dp"
-                        android:lineSpacingMultiplier="1.1"
                         android:text="@string/content_about"
-                        android:textSize="13sp" />
+                        android:textSize="12sp" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -196,6 +194,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/card_view2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
