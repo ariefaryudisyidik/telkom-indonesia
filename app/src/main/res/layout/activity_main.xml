@@ -25,14 +25,14 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                   android:layout_marginLeft="5dp"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="11dp"
                     app:cardCornerRadius="3dp">
 
                     <ImageView
                         android:layout_width="match_parent"
-                        android:layout_height="225dp"
+                        android:layout_height="231dp"
                         android:layout_gravity="fill_vertical|fill_horizontal"
                         android:padding="5dp"
                         android:scaleType="fitXY"
@@ -53,15 +53,17 @@
                         android:layout_height="wrap_content"
                         android:padding="7dp"
                         android:text="@string/about"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="31dp"
+                        android:lineSpacingMultiplier="1.1"
                         android:padding="7dp"
                         android:text="@string/content_about"
-                        android:textSize="12sp" />
+                        android:textSize="13sp" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -77,6 +79,7 @@
                         android:layout_height="wrap_content"
                         android:padding="7dp"
                         android:text="@string/digital_business_domain"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <TableLayout
@@ -88,20 +91,21 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="25dp"
+                                android:layout_marginTop="31dp"
                                 android:padding="7dp"
                                 android:text="1."
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="25dp"
+                                android:layout_marginTop="31dp"
                                 android:layout_marginBottom="3dp"
                                 android:layout_weight="1"
+                                android:lineSpacingMultiplier="1.1"
                                 android:padding="1dp"
                                 android:text="@string/content_digital_business_domain1"
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
                         </TableRow>
 
                         <TableRow>
@@ -111,16 +115,17 @@
                                 android:layout_height="wrap_content"
                                 android:padding="7dp"
                                 android:text="2."
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="3dp"
                                 android:layout_weight="1"
+                                android:lineSpacingMultiplier="1.1"
                                 android:padding="1dp"
                                 android:text="@string/content_digital_business_domain2"
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
                         </TableRow>
 
                         <TableRow>
@@ -130,16 +135,17 @@
                                 android:layout_height="wrap_content"
                                 android:padding="7dp"
                                 android:text="3."
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="14dp"
                                 android:layout_weight="1"
+                                android:lineSpacingMultiplier="1.1"
                                 android:padding="1dp"
                                 android:text="@string/content_digital_business_domain3"
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
                         </TableRow>
 
                     </TableLayout>
@@ -158,15 +164,17 @@
                         android:layout_height="wrap_content"
                         android:padding="7dp"
                         android:text="@string/purpose"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="31dp"
+                        android:lineSpacingMultiplier="1.1"
                         android:padding="7dp"
                         android:text="@string/content_purpose"
-                        android:textSize="12sp" />
+                        android:textSize="13sp" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -182,15 +190,17 @@
                         android:layout_height="wrap_content"
                         android:padding="7dp"
                         android:text="@string/visi"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="25dp"
+                        android:layout_marginTop="31dp"
+                        android:lineSpacingMultiplier="1.1"
                         android:padding="7dp"
                         android:text="@string/content_visi"
-                        android:textSize="12sp" />
+                        android:textSize="13sp" />
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -207,6 +217,7 @@
                         android:layout_height="wrap_content"
                         android:padding="7dp"
                         android:text="@string/misi"
+                        android:textSize="16sp"
                         android:textStyle="bold" />
 
                     <TableLayout
@@ -218,20 +229,21 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="25dp"
+                                android:layout_marginTop="31dp"
                                 android:padding="7dp"
                                 android:text="1."
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="25dp"
+                                android:layout_marginTop="31dp"
                                 android:layout_marginBottom="3dp"
                                 android:layout_weight="1"
+                                android:lineSpacingMultiplier="1.1"
                                 android:padding="1dp"
                                 android:text="@string/content_misi1"
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
                         </TableRow>
 
                         <TableRow>
@@ -241,16 +253,17 @@
                                 android:layout_height="wrap_content"
                                 android:padding="7dp"
                                 android:text="2."
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="3dp"
                                 android:layout_weight="1"
+                                android:lineSpacingMultiplier="1.1"
                                 android:padding="1dp"
                                 android:text="@string/content_misi2"
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
                         </TableRow>
 
                         <TableRow>
@@ -260,16 +273,17 @@
                                 android:layout_height="wrap_content"
                                 android:padding="7dp"
                                 android:text="3."
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="14dp"
                                 android:layout_weight="1"
+                                android:lineSpacingMultiplier="1.1"
                                 android:padding="1dp"
                                 android:text="@string/content_misi3"
-                                android:textSize="12sp" />
+                                android:textSize="13sp" />
                         </TableRow>
 
                     </TableLayout>
