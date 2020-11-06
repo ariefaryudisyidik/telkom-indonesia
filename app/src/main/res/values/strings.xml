@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Telkom Indonesia</string>
+    <string name="about">Tentang Telkomgroup</string>
+    <string name="content_about">
+        PT Telkom Indonesia (Persero) Tbk (Telkom) adalah Badan Usaha Milik Negara (BUMN)
+        yang bergerak di bidang jasa layanan teknologi informasi dan komunikasi (TIK) dan jaringan telekomunikasi di Indonesia.
+        Kegiatan usaha TelkomGroup bertumbuh dan berubah seiring dengan perkembangan teknologi, informasi dan digitalisasi,
+        namun masih dalam koridor industri telekomunikasi dan informasi.
+        Hal ini terlihat dari lini bisnis yang terus berkembang melengkapi legacy yang sudah ada sebelumnya.</string>
+    <string name="purpose">Purpose</string>
+    <string name="content_purpose">
+        Mewujudkan bangsa yang lebih sejahtera dan berdaya saing
+        serta memberikan nilai tambah yang terbaik bagi para pemangku kepentingan.</string>
+    <string name="visi">Visi</string>
+    <string name="content_visi">Menjadi digital telco pilihan utama untuk memajukan masyarakat</string>
+    <string name="misi">Misi</string>
+    <string name="content_misi1">Mempercepat pembangunan Infrastruktur dan platform digital cerdas yang berkelanjutan, ekonomis, dan dapat diakses oleh seluruh masyarakat.</string>
+    <string name="content_misi2">Mengembangkan talenta digital unggulan yang membantu mendorong kemampuan digital dan tingkat adopsi digital bangsa.</string>
+    <string name="content_misi3">Mengorkestrasi ekosistem digital untuk memberikan pengalaman digital pelanggan terbaik</string>
+
 </resources>
