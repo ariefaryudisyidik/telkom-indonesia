@@ -8,6 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link PlaceFragment#newInstance} factory method to
@@ -59,6 +66,37 @@ public class PlaceFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_place, container, false);
+        View view = inflater.inflate(R.layout.fragment_place, container, false);
+
+        // Initialize view
+        SupportMapFragment supportMapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.google_map);
+
+        //Async map
+        supportMapFragment.getMapAsync(new OnMapReadyCallback() {
+            @Override
+            public void onMapReady(GoogleMap googleMap) {
+                // When map is loaded
+                googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+                    @Override
+                    public void onMapClick(LatLng latLng) {
+                        // When clicked on map
+                        // Initialize marker option
+                        MarkerOptions markerOptions = new MarkerOptions();
+                        // Set potition of marker
+                        markerOptions.position(latLng);
+                        // Set title of marker
+                        markerOptions.title(latLng.latitude + ":" + latLng.longitude);
+                        // Remove all marker
+                        googleMap.clear();
+                        // Animating to zoom the marker
+                        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10));
+                        // Add marker on map
+                        googleMap.addMarker(markerOptions);
+                    }
+                });
+            }
+        });
+        return view;
     }
+
 }
