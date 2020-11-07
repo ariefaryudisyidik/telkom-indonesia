@@ -21,5 +21,7 @@
     <string name="content_misi1">Mempercepat pembangunan Infrastruktur dan platform digital cerdas yang berkelanjutan, ekonomis, dan dapat diakses oleh seluruh masyarakat.</string>
     <string name="content_misi2">Mengembangkan talenta digital unggulan yang membantu mendorong kemampuan digital dan tingkat adopsi digital bangsa.</string>
     <string name="content_misi3">Mengorkestrasi ekosistem digital untuk memberikan pengalaman digital pelanggan terbaik</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
