@@ -8,12 +8,17 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
+
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.awt.font.TextAttribute;
+
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
-
+    Toolbar toolbar;
     BottomNavigationView bottomNavigationView;
 
     @Override
@@ -21,11 +26,21 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Toolbar
+        toolbar = findViewById(R.id.toolbar);
+
+        // Sets the Toolbar to act as the Action Bar for this activity window.
+        // Make sure the toolbar exist in the activity and is not null
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Telkom Indonesia");
+        getSupportActionBar().setSubtitle("Cabang Kedaton - Unit");
+
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
         // Open Fragment
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFragment()).commit();
     }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {

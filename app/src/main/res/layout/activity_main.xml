@@ -8,6 +8,19 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextAppearance="@style/ToolbarTitleTheme"
+        app:subtitleTextAppearance="@style/ToolbarSubtitleTheme"
+        app:titleTextColor="@color/white"
+        app:subtitleTextColor="@color/grey">
+
+    </androidx.appcompat.widget.Toolbar>
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
