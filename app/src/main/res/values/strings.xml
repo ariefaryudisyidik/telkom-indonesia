@@ -1,5 +1,11 @@
 <resources>
     <string name="app_name">Telkom Indonesia</string>
+    <string name="company_name">Nama Perusahaan</string>
+    <string name="content_company_name">Telkom Indonesia Cabang Kedaton - Unit</string>
+    <string name="address">Alamat</string>
+    <string name="content_address">Jl. Sultan H. No.1, Sepang Jaya, Kec. Kedaton, Kota Bandar Lampung, Lampung 35132Alamat</string>
+    <string name="telephone">Telepon</string>
+    <string name="content_telephone">(0721) 700000</string>
     <string name="about">Tentang Telkomgroup</string>
     <string name="content_about">
         PT Telkom Indonesia (Persero) Tbk (Telkom) adalah Badan Usaha Milik Negara (BUMN)
