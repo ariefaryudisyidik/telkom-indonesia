@@ -77,7 +77,7 @@ public class PlaceFragment extends Fragment implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
-        LatLng TelkomKedaton = new LatLng(-5.378153, 105.262212);
+        LatLng TelkomKedaton = new LatLng(-5.3781636, 105.2622125);
         googleMap.addMarker(new MarkerOptions().position(TelkomKedaton).title("Telkom Indonesia Cabang Kedaton - Unit"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(TelkomKedaton));
     }
