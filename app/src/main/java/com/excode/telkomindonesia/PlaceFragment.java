@@ -20,7 +20,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
  * Use the {@link PlaceFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class PlaceFragment extends Fragment {
+public class PlaceFragment extends Fragment implements OnMapReadyCallback {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -70,33 +70,15 @@ public class PlaceFragment extends Fragment {
 
         // Initialize view
         SupportMapFragment supportMapFragment = (SupportMapFragment) getChildFragmentManager().findFragmentById(R.id.google_map);
+        supportMapFragment.getMapAsync(this);
 
-        //Async map
-        supportMapFragment.getMapAsync(new OnMapReadyCallback() {
-            @Override
-            public void onMapReady(GoogleMap googleMap) {
-                // When map is loaded
-                googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
-                    @Override
-                    public void onMapClick(LatLng latLng) {
-                        // When clicked on map
-                        // Initialize marker option
-                        MarkerOptions markerOptions = new MarkerOptions();
-                        // Set potition of marker
-                        markerOptions.position(latLng);
-                        // Set title of marker
-                        markerOptions.title(latLng.latitude + ":" + latLng.longitude);
-                        // Remove all marker
-                        googleMap.clear();
-                        // Animating to zoom the marker
-                        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10));
-                        // Add marker on map
-                        googleMap.addMarker(markerOptions);
-                    }
-                });
-            }
-        });
         return view;
     }
 
+    @Override
+    public void onMapReady(GoogleMap googleMap) {
+        LatLng TelkomKedaton = new LatLng(-5.378153, 105.262212);
+        googleMap.addMarker(new MarkerOptions().position(TelkomKedaton).title("Telkom Indonesia Cabang Kedaton - Unit"));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLng(TelkomKedaton));
+    }
 }
