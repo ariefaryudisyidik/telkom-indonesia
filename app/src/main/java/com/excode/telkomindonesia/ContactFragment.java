@@ -1,6 +1,7 @@
 package com.excode.telkomindonesia;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -15,7 +16,7 @@ import android.widget.Button;
  * Use the {@link ContactFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ContactFragment extends Fragment {
+public class ContactFragment extends Fragment implements View.OnClickListener {
     Button btnWeb, btnEmail, btnTelephone;
 
     // TODO: Rename parameter arguments, choose names that match
@@ -62,6 +63,25 @@ public class ContactFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_contact, container, false);
+        View view = inflater.inflate(R.layout.fragment_contact, container, false);
+        btnWeb = view.findViewById(R.id.btn_web);
+        btnEmail = view.findViewById(R.id.btn_email);
+        btnTelephone = view.findViewById(R.id.btn_telephone);
+
+        btnWeb.setOnClickListener(this);
+        btnEmail.setOnClickListener(this);
+        btnTelephone.setOnClickListener(this);
+
+        return view;
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_web:
+                Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://telkom.co.id"));
+                startActivity(webIntent);
+                break;
+        }
     }
 }

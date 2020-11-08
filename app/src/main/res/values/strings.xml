@@ -30,7 +30,7 @@
 
     //Contact
     <string name="web">Web</string>
-    <string name="content_web">www.mytelkom.co.id</string>
+    <string name="content_web">www.telkom.co.id</string>
     <string name="email">Email</string>
     <string name="content_email">customercare@telkom.co.id</string>
 </resources>
