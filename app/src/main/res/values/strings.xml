@@ -3,7 +3,7 @@
     <string name="company_name">Nama Perusahaan</string>
     <string name="content_company_name">Telkom Indonesia Cabang Kedaton - Unit</string>
     <string name="address">Alamat</string>
-    <string name="content_address">Jl. Sultan H. No.1, Sepang Jaya, Kec. Kedaton, Kota Bandar Lampung, Lampung 35132Alamat</string>
+    <string name="content_address">Jl. Sultan H. No.1, Sepang Jaya, Kec. Kedaton, Kota Bandar Lampung, Lampung 35132</string>
     <string name="telephone">Telepon</string>
     <string name="content_telephone">(0721) 700000</string>
     <string name="about">Tentang Telkomgroup</string>
@@ -27,7 +27,10 @@
     <string name="content_misi1">Mempercepat pembangunan Infrastruktur dan platform digital cerdas yang berkelanjutan, ekonomis, dan dapat diakses oleh seluruh masyarakat.</string>
     <string name="content_misi2">Mengembangkan talenta digital unggulan yang membantu mendorong kemampuan digital dan tingkat adopsi digital bangsa.</string>
     <string name="content_misi3">Mengorkestrasi ekosistem digital untuk memberikan pengalaman digital pelanggan terbaik</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    //Contact
+    <string name="web">Web</string>
+    <string name="content_web">www.mytelkom.co.id</string>
+    <string name="email">Email</string>
+    <string name="content_email">customercare@telkom.co.id</string>
 </resources>
