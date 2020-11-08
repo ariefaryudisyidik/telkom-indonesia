@@ -1,5 +1,6 @@
 package com.excode.telkomindonesia;
 
+import android.hardware.Camera;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -12,6 +13,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -80,5 +82,6 @@ public class PlaceFragment extends Fragment implements OnMapReadyCallback {
         LatLng TelkomKedaton = new LatLng(-5.3781636, 105.2622125);
         googleMap.addMarker(new MarkerOptions().position(TelkomKedaton).title("Telkom Indonesia Cabang Kedaton - Unit"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(TelkomKedaton));
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(TelkomKedaton, 17));
     }
 }
