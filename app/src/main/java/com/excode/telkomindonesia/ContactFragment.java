@@ -6,6 +6,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.style.StrikethroughSpan;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,10 +78,20 @@ public class ContactFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public void onClick(View v) {
-        switch (v.getId()){
+        switch (v.getId()) {
             case R.id.btn_web:
                 Intent webIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://telkom.co.id"));
                 startActivity(webIntent);
+                break;
+            case R.id.btn_email:
+                Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                emailIntent.setType("text/plan");
+                emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"customercare@telkom.co.id"});
+                startActivity(emailIntent);
+                break;
+            case R.id.btn_telephone:
+                Intent dialPhoneIntent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + "0721 700000"));
+                startActivity(dialPhoneIntent);
                 break;
         }
     }

@@ -1,9 +1,15 @@
 <resources>
     <string name="app_name">Telkom Indonesia</string>
     <string name="company_name">Nama Perusahaan</string>
-    <string name="content_company_name">Telkom Indonesia Cabang Kedaton - Unit</string>
+    <string name="content_company_name">
+        Telkom Indonesia
+        \nCabang Kedaton - Unit
+    </string>
     <string name="address">Alamat</string>
-    <string name="content_address">Jl. Sultan H. No.1, Sepang Jaya, Kec. Kedaton, Kota Bandar Lampung, Lampung 35132</string>
+    <string name="content_address">
+        Jl. Sultan H. No.1, Sepang Jaya, Kec. Kedaton,
+        \nKota Bandar Lampung, Lampung 35132
+    </string>
     <string name="telephone">Telepon</string>
     <string name="content_telephone">(0721) 700000</string>
     <string name="about">Tentang Telkomgroup</string>
@@ -12,7 +18,8 @@
         yang bergerak di bidang jasa layanan teknologi informasi dan komunikasi (TIK) dan jaringan telekomunikasi di Indonesia.
         \nKegiatan usaha TelkomGroup bertumbuh dan berubah seiring dengan perkembangan teknologi, informasi dan digitalisasi,
         namun masih dalam koridor industri telekomunikasi dan informasi.
-        Hal ini terlihat dari lini bisnis yang terus berkembang melengkapi legacy yang sudah ada sebelumnya.</string>
+        Hal ini terlihat dari lini bisnis yang terus berkembang melengkapi legacy yang sudah ada sebelumnya.
+    </string>
     <string name="digital_business_domain">3 Digital Business Domain:</string>
     <string name="content_digital_business_domain1"><b>Digital Connectivity:</b> Fiber to the x (FTTx), 5G, Software Defined Networking (SDN)/ Network Function Virtualization (NFV)/ Satellite</string>
     <string name="content_digital_business_domain2"><b>Digital Platform:</b> Data Center, Cloud, Internet of Things (IoT), Big Data/ Artificial Intelligence (AI), Cybersecurity</string>
